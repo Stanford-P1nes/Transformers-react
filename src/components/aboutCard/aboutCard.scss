@@ -1,0 +1,107 @@
+@import '../../sass/base/colors.scss';
+@import '../../sass/base/box-shadow.scss';
+
+.about_card {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.17);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    display: flex;
+    z-index: 1100;
+    transition: opacity .5s ease;
+
+    animation-name: openAboutCard;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes openAboutCard {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.wrapper_info__about_card {
+    position: relative;
+    width: 560px;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .5s ease, opacity .5s ease;
+    @extend %card-gradient;
+    @extend %box-shadow-inset;
+    @media (max-width: 630px) {
+        width: 500px;
+    }
+    @media (max-width: 560px) {
+        width: 400px;
+    }
+    @media (max-width: 430px) {
+        width: 350px;
+    }
+    animation-name: openItem;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes openItem {
+    0% {
+        transform: translateY(20px) scale(.9);
+    }
+    20% {
+        transform: translateY(20px) scale(.9);
+    }
+    60% {
+        transform: translateY(-10px) scale(1);
+    }
+    80% {
+        transform: translateY(-10px) scale(1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.wrapper_info__top_line {
+    width: 100%;
+    height: 60%;
+    min-height: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.about_card_image {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.wrapper_info__bottom_line {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: $primary-light;
+    overflow-y: auto;
+    background-color: transparent;
+}
+
+.design_bottom_line {
+    margin-bottom: 5px;
+}
+
+.person_name {
+    font-size: 1.5rem;
+}

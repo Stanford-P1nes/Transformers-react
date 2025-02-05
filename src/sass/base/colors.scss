@@ -1,0 +1,14 @@
+$primary-light: white;
+$primary-dark: #282828;
+$unactive: #f1f1f1;
+$warning: orange;
+$extra: orangered;
+$accent: #4B0082;
+$autobot: rgb(0, 88, 252);
+$decepticon: red;
+$second: black;
+$synthetic: rgb(48, 254, 48);
+
+%card-gradient {
+    background: linear-gradient(64.2054862753389deg, rgba(243, 72, 104,1) 3.6545838258776104%,rgba(242, 71, 104,1) 3.655282906487846%,rgba(158, 0, 236,1) 98.49514676142334%,rgba(158, 0, 236,1) 98.49583981223299%);
+}

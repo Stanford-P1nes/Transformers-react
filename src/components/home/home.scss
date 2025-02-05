@@ -1,0 +1,28 @@
+@import '../../sass/base/colors.scss';
+
+.section_home {
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.button_primary_home {
+    margin: 10px 0;
+    background-color: $warning;
+    box-shadow: 2px 2px 0 $extra;
+}
+
+.home_inner {
+    width: 100%;
+    animation: startHome 1s ease;
+}
+
+@keyframes startHome {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

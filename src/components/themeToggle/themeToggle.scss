@@ -1,0 +1,53 @@
+@import '../../sass/base/colors.scss';
+@import '../../sass/base/box-shadow.scss';
+
+.theme_toggle {
+    position: relative;
+    min-width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: $primary-light;
+    color: $autobot;
+
+    @extend %box-shadow-inset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    margin-left: 20px;
+
+    transition: all .2s linear;
+    @media (max-width: 650px) {
+        margin-left: auto;
+    }
+    // @media (max-width: 320px) {
+    //     margin-left: 5px;
+    // }
+    z-index: 1000;
+}
+
+.icon_theme {
+    position: absolute;
+    transition: margin .5s ease;
+}
+
+.icon_light {
+    margin-bottom: 0;
+    &.active {
+        margin-bottom: 41px;
+    }
+}
+
+.icon_dark {
+    margin-top: 40px;
+    &.active {
+        margin-top: 0;
+    }
+}
+
+.theme_toggle.active {
+    color: $decepticon;
+}
