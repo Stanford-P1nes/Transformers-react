@@ -5,6 +5,22 @@ export default function Card(props) {
     function handleClick() {
         props.onCardClick(props.data);
     }
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show')
+            } else {
+                entry.target.classList.remove('show')
+            }
+        })
+    }, {threshold: 0})
+    setTimeout(() => {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(card => {
+            observer.observe(card)
+        })
+    }, 0)
     return (
         <article
             className="card card_section_persons card_effects"

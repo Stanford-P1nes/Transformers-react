@@ -6,13 +6,15 @@
     border-radius: 5px;
     cursor: pointer;
     overflow: hidden;
-    transition: box-shadow .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, transform .5s ease, opacity .5s ease;
     z-index: 777;
 }
 
 .card_section_persons {
     border: 1px solid $autobot;
     box-shadow: 5px 5px 0px $autobot;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .card_effects {
@@ -23,6 +25,11 @@
     &:hover > .wrapper_card_img img {
         transform: scale(1.05);
     }
+}
+
+.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .card .wrapper_card_img {
