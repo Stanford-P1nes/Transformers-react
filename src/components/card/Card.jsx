@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoPersonSharp } from "react-icons/io5";
 import './card.scss'
 
 export default function Card(props) {
@@ -27,10 +28,14 @@ export default function Card(props) {
             onClick={handleClick}
         >
             <div className="wrapper_card_img">
-                <img
-                    src={`./src/assets/image/${props.data.img}`}
-                    alt={props.data.name}
-                />
+                {props.data.img !== "" ? (
+                    <img
+                        src={`./src/assets/image/${props.data.img}`}
+                        alt={props.data.name}
+                    />
+                ) : (
+                    <IoPersonSharp className='card_ico'/>
+                )}
             </div>
             <strong className="card_name">{props.data.name}</strong>
         </article>

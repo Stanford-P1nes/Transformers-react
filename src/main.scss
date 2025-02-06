@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Geologica" rel="stylesheet" type="text/css');
+@import url('https://fonts.googleapis.com/css?family=Tektur');
 @import './sass/base/colors.scss';
-
+// @font-face {
+//     font-family: font-family;
+//     src: url('https://fonts.googleapis.com/css?family=Tektur');
+// }
 
 html {
     scroll-behavior: smooth;
@@ -15,9 +18,24 @@ html {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-family: 'Geologica', sans-serif;
+    font-family: 'Tektur', sans-serif;
     letter-spacing: .1rem;
     line-height: 1.05rem;
+}
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #8fabdb;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #465775;
 }
 
 body {

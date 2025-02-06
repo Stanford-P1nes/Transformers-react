@@ -2,7 +2,8 @@
 
 .card {
     position: relative;
-    height: clamp(200px, 20vw, 300px);
+    // height: clamp(200px, 20vw, 300px);
+    aspect-ratio: 1/1;
     border-radius: 5px;
     cursor: pointer;
     overflow: hidden;
@@ -45,14 +46,21 @@
     height: 100%;
     user-select: none;
     transition: transform .5s ease;
+    color: $primary-light;
 }
 
-.card .card_name {
+.card .card_ico {
+    margin: auto;
+    font-size: 3rem;
+    color: $primary-light;
+}
+
+.card_name {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.5rem;
+    font-size: clamp(0.75rem, 3vw, 1.5rem);
     color: $primary-light;
     text-wrap: nowrap;
     text-shadow: 1px 1px 3px black;

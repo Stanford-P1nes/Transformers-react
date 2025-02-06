@@ -13,7 +13,7 @@ export default function About() {
                             <b>Агаев Рамазан</b>
                         </div>
                         <div className="about_author__bottom_line">
-                            <p>
+                            <p className="about_autor__text">
                                 Здравствуй путник, меня зовут Рамазан, я человек
                                 который увлекается программированием в IT свере
                                 Frontend-devilopment. Начал я изучение этой

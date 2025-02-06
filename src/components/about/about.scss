@@ -14,13 +14,14 @@
         background: rgba($primary-light, .1);
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        min-height: 100vh;
     }
 
     .about_author {
         flex: 1 1 60%;
         padding: 15px;
         border-left: 4px solid $accent; // Линия как акцент
-        background-color: #f0f8ff;
+        background-color: $accent-for-text;
         border-radius: 8px;
         @extend %box-shadow-inset;
 
@@ -30,21 +31,24 @@
             margin-bottom: 10px;
 
             b {
+                font-size: 0.75rem;
                 font-weight: bold;
             }
         }
 
         &__bottom_line {
-            p {
-                font-size: 16px;
+            .about_autor__text {
+                font-size: 0.875rem;
                 line-height: 1.6;
                 text-align: justify;
             }
         }
+
     }
 
     .about_saide {
         flex: 1 1 30%;
+        font-size: 0.875rem;
         display: flex;
         align-items: center;
         justify-content: center;
