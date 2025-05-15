@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Cards from '../cards/Cards'
-import AboutCard from '../aboutCard/AboutCard';
+import Cards from "/src/components/cards/Cards.jsx";
+import AboutCard from "/src/components/aboutCard/AboutCard.jsx";
 import './persons.scss';
 
 export default function persons(props) {

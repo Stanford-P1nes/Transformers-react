@@ -1,5 +1,5 @@
 import React from "react";
-import QuickStart from "../quickStart/QuickStart";
+import QuickStart from "/src/components/quickStart/QuickStart.jsx";
 import "./home.scss";
 
 export default function Home() {
