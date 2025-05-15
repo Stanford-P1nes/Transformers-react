@@ -64,4 +64,7 @@ body.dark_theme {
     .about_author {
         background-color: $decepticon;
     }
+    .wrapper_info__about_card {
+        @extend %card-gradient-decepticon;
+    }
 }

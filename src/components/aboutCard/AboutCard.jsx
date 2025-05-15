@@ -47,11 +47,11 @@ export default function AboutCard(props) {
                     </strong>
                     <p className="design_bottom_line person_fraction">
                         <em>Фракция: </em>
-                        {props.data.fraction}
+                        <span>{props.data.fraction}</span>
                     </p>
                     <p className="design_bottom_line person_rank">
                         <em>Звание: </em>
-                        <u>{props.data.rank}</u>
+                        <span>{props.data.rank}</span>
                     </p>
                     <p className="design_bottom_line person_altForm">
                         <em>Альт-форма: </em>
@@ -59,18 +59,18 @@ export default function AboutCard(props) {
                     </p>
                     <p className="design_bottom_line person_weapon">
                         <em>Оружие: </em>
-                        {props.data.weapon}
+                        <span>{props.data.weapon}</span>
                     </p>
                     <p className="design_bottom_line person_personality">
                         {props.data.personality}
                     </p>
                     <p className="design_bottom_line person_origin">
                         <em>Происхождение: </em>
-                        {props.data.origin}
+                        <span>{props.data.origin}</span>
                     </p>
                     <p className="design_bottom_line person_enemy">
                         <em>Враг: </em>
-                        <u>{props.data.enemy}</u>
+                        <sapn>{props.data.enemy}</sapn>
                     </p>
                     <q className="design_bottom_line person_interestingFacts">
                         {props.data.interestingFacts}

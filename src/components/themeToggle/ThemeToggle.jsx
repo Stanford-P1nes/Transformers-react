@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { CiLight } from "react-icons/ci";
-import { CiDark } from "react-icons/ci";
+import { useState } from "react";
+import Autobots from "/src/assets/ico/Autobots-ico.png";
+import Decepticons from "/src/assets/ico/Decepticons-ico.png";
 import "./themeToggle.scss";
 
 export default function ThemeToggle() {
@@ -15,22 +15,24 @@ export default function ThemeToggle() {
         <button
             onClick={() => setTheme(!theme)}
             type="button"
-            className={`theme_toggle ${theme && "active"}`}
+            className={`theme_toggle header_inner__theme_toggle ${
+                theme && "active"
+            }`}
         >
-            <CiLight
-                className={
-                    theme
-                        ? "icon_theme icon_light active"
-                        : "icon_theme icon_light"
-                }
-            />
-            <CiDark
-                className={
-                    theme
-                        ? "icon_theme icon_dark active"
-                        : "icon_theme icon_dark"
-                }
-            />
+            <div className="themeIconBlock">
+                <img
+                    src={Autobots}
+                    alt="Иконка фракции автоботов"
+                    className={`icon_theme icon_light ${theme && "active"}`}
+                />
+            </div>
+            <div className="themeIconBlock">
+                <img
+                    src={Decepticons}
+                    alt="Иконка фракции десептиконов"
+                    className={`icon_theme icon_dark ${theme && "active"}`}
+                />
+            </div>
         </button>
     );
 }

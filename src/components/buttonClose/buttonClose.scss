@@ -1,17 +1,13 @@
 @import '../../sass/base/colors.scss';
-
 .button_close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    font-size: 2rem;
+    padding: 10px;
+    font-size: 1rem;
     color: $primary-light;
+    background-color: $extra;
+    border-radius: 5px;
+    width: max-content;
 }
 
 .about_card__button_close {
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin: auto auto 0;
 }
