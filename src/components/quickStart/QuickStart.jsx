@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './quickStart.scss';
-import '../../sass/base/wrapper_text.scss';
+import '@/sass/base/wrapper_text.scss';
 
 export default function QuickStart() {
     return (

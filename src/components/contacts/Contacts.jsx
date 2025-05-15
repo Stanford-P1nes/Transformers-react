@@ -1,6 +1,6 @@
 import React from "react";
 import "./contacts.scss";
-import '../../sass/base/button.scss'
+import '@/sass/base/button.scss'
 
 export default function Contacts() {
     return (

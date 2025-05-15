@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "/src/components/card/Card.jsx";
+import Card from "@/components/card/Card.jsx";
 import "./cards.scss";
 
 export default function Cards(props) {

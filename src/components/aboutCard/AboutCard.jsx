@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonClose from "/src/components/buttonClose/buttonClose.jsx";
+import ButtonClose from "@/components/buttonClose/buttonClose.jsx";
 import "./aboutCard.scss";
 
 export default function AboutCard(props) {

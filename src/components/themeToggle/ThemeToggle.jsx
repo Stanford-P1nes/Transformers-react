@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Autobots from "/src/assets/ico/Autobots-ico.png";
-import Decepticons from "/src/assets/ico/Decepticons-ico.png";
+import Autobots from "@/assets/ico/Autobots-ico.png";
+import Decepticons from "@/assets/ico/Decepticons-ico.png";
 import "./themeToggle.scss";
 
 export default function ThemeToggle() {

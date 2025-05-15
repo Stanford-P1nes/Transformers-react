@@ -1,5 +1,5 @@
 import React from "react";
-import Contacts from "/src/components/contacts/Contacts.jsx";
+import Contacts from "@/components/contacts/Contacts.jsx";
 import "./about.scss";
 
 export default function About() {
