@@ -1,0 +1,82 @@
+Transformers-react/
+├── public/
+│   └── icons
+│   └── images
+├── src/
+│   ├── App.jsx
+│   ├── Main.jsx
+│   ├── dataPersons.js
+│   ├── components/
+│   │   ├── about/
+│   │   │   ├── _about.scss
+│   │   │   ├── About.jsx
+│   │   │   └── about.scss
+│   │   ├── aboutCard/
+│   │   │   ├── _aboutCard.scss
+│   │   │   ├── AboutCard.jsx
+│   │   │   └── aboutCard.scss
+│   │   ├── buttonClose/
+│   │   │   ├── _buttonClose.scss
+│   │   │   ├── ButtonClose.jsx
+│   │   │   └── buttonClose.scss
+│   │   ├── card/
+│   │   │   ├── _card.scss
+│   │   │   ├── Card.jsx
+│   │   │   └── card.scss
+│   │   ├── cards/
+│   │   │   ├── _cards.scss
+│   │   │   ├── Cards.jsx
+│   │   │   └── cards.scss
+│   │   ├── contacts/
+│   │   │   ├── _contacts.scss
+│   │   │   ├── Contacts.jsx
+│   │   │   └── contacts.scss
+│   │   ├── dropMenu/
+│   │   │   ├── _dropMenu.scss
+│   │   │   ├── DropMenu.jsx
+│   │   │   └── dropMenu.scss
+│   │   ├── footer/
+│   │   │   ├── _footer.scss
+│   │   │   ├── Footer.jsx
+│   │   │   └── footer.scss
+│   │   ├── header/
+│   │   │   ├── _header.scss
+│   │   │   ├── Header.jsx
+│   │   │   └── header.scss
+│   │   ├── home/
+│   │   │   ├── _home.scss
+│   │   │   ├── Home.jsx
+│   │   │   └── home.scss
+│   │   ├── logo/
+│   │   │   ├── _logo.scss
+│   │   │   ├── Logo.jsx
+│   │   │   └── logo.scss
+│   │   ├── menu/
+│   │   │   ├── _menu.scss
+│   │   │   ├── Menu.jsx
+│   │   │   └── menu.scss
+│   │   ├── persons/
+│   │   │   ├── _persons.scss
+│   │   │   ├── Persons.jsx
+│   │   │   └── persons.scss
+│   │   ├── quickStart/
+│   │   │   ├── _quickStart.scss
+│   │   │   ├── QuickStart.jsx
+│   │   │   └── quickStart.scss
+│   │   ├── search/
+│   │   │   ├── _search.scss
+│   │   │   ├── Search.jsx
+│   │   │   └── search.scss
+│   │   └── themeToggle/
+│   │       ├── _themeToggle.scss
+│   │       ├── ThemeToggle.jsx
+│   │       └── themeToggle.scss
+│   ├── pages/
+│   └── assets/
+│       └── sass/
+│           ├── _darkThemea.scss
+│           ├── _mixins.scss
+│           ├── _variables.scss
+│           └── main.scss
+├── package.json
+└── vite.config.js
