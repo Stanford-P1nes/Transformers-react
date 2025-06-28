@@ -1,0 +1,60 @@
+@import '../../sass/base/_colors.scss';
+
+.drop_menu {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: $primary-dark;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px 40px;
+    transition: transform .5s ease;
+    z-index: 888;
+    @media (max-width: 650px) {
+        display: flex;
+    }
+    @media (max-width: 540px) {
+        padding: 10px 10px;
+    }
+    @media (max-width: 540px) {
+        width: 100vw;
+    }
+}
+
+.drop_menu.show {
+    transform: translateX(-50%) translateY(100%);
+}
+
+.menu_item__drop_menu {
+    color: $primary-light;
+    @media (max-width: 540px) {
+        font-size: .75rem;
+    }
+}
+
+.menu_item__drop_menu.manu_active::after {
+    background-color: $primary-light;
+}
+
+.button_drop_menu {
+    width: 50px;
+    color: $primary-light;
+    font-size: 1.5rem;
+    border: 1px solid $primary-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    background-color: $primary-dark;
+}
+
+.button_drop_menu__drop_menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}

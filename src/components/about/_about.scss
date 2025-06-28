@@ -1,0 +1,86 @@
+@use '../../sass/base/_colors.scss' as *;
+@use '../../sass/base/_box-shadow.scss' as *;
+
+.section_about {
+    padding: 20px 0;
+
+    .about_inner {
+        display: flex;
+        flex-wrap: wrap; // Для адаптивности
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba($primary-light, .1);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        min-height: 100vh;
+    }
+
+    .about_author {
+        flex: 1 1 60%;
+        padding: 15px;
+        border-left: 4px solid $accent; // Линия как акцент
+        background-color: $accent-for-text;
+        border-radius: 8px;
+        @extend %box-shadow-inset;
+
+        &__top_line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            b {
+                font-size: 0.75rem;
+                font-weight: bold;
+            }
+        }
+
+        &__bottom_line {
+            .about_autor__text {
+                font-size: 0.875rem;
+                line-height: 1.6;
+                text-align: justify;
+            }
+        }
+
+    }
+
+    .about_saide {
+        flex: 1 1 30%;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: $unactive;
+        border-radius: 8px;
+        @extend %box-shadow-inset;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_inner {
+        flex-direction: column;
+    }
+
+    .about_author, .about_saide {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+.about_inner {
+    animation: startAbout 1s ease;
+
+    @keyframes startAbout {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

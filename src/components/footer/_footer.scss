@@ -1,0 +1,17 @@
+@import '../../sass/base/_colors.scss';
+
+.footer {
+    width: 100%;
+    background-color: $autobot;
+    box-shadow: 0 -20px 0 -15px $primary-dark;
+    z-index: 1000;
+}
+
+.footer_inner {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_inner p {
+    color: $primary-light;
+}

@@ -1,0 +1,27 @@
+@use '../../sass/base/_colors.scss' as *;
+@use '../../sass/base/_box-shadow.scss' as *;
+
+.contacts {
+    background-color: $autobot;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: $autobot;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    @extend %box-shadow-inset;
+}
+
+.contacts_item {
+    color: $primary-light;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contacts_item a {
+    color: $synthetic !important;
+    margin-left: 10px;
+}

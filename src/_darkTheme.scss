@@ -1,0 +1,70 @@
+@import './sass/base/_colors.scss';
+
+body.dark_theme {
+    background-color: $primary-dark;
+    p, h1, h2, h3, h4, h5, h6, a, strong, span, b, s, em, i, u, pre, sub, sup, small, address, mark, abbr, kbd, dfn, ins, del, q, blockquote, cite, ul, ol, li, dl, dt, dd, code, var, samp, header, footer, table, thead, tbody, tfoot, tr, td, summary, details, label, figure, figcaption, section, div, main {
+        color: $primary-light;
+    }
+    .wrapper_text__quick_start {
+        background-color: $decepticon;
+    }
+    .button_primary_home {
+        box-shadow: 2px 2px 0 $autobot;
+    }
+    .button_effects {
+        &:hover {
+            box-shadow: 3px 3px 0 $autobot;
+            transform: translate(-1px, -1px);
+        }
+        &:active {
+            box-shadow: none;
+            transform: translate(3px, 3px);
+        }
+    }
+    .menu_item::after, .menu_item::before {
+        background-color: $primary-light;
+    }
+    .menu_item {
+        color: $primary-light;
+    }
+    .card_section_persons {
+        box-shadow: 5px 5px 0px $decepticon;
+        &:hover {
+            box-shadow: 0px 0px 0px $decepticon;
+        }
+    }
+    .card_section_persons {
+        border: 1px solid $decepticon;
+    }
+    .header::after, .footer {
+        background-color: $decepticon;
+    }
+    .header {box-shadow: 0 20px 0 -15px $primary-light;}
+    .footer {box-shadow: 0 -20px 0 -15px $primary-light;}
+    .contacts {
+        background-color: $decepticon;
+    }
+    .drop_menu {
+        background-color: $primary-light;
+        .menu_item__drop_menu {
+            color: $primary-dark;
+        }
+        .menu_item__drop_menu.manu_active::after {
+            background-color: $primary-dark;
+        }
+        .button_drop_menu {
+            background-color: $primary-light;
+            color: $primary-dark;
+            border: 1px solid $primary-dark;
+        }
+    }
+    .button_search {
+        background-color: $decepticon;
+    }
+    .about_author {
+        background-color: $decepticon;
+    }
+    .wrapper_info__about_card {
+        @extend %card-gradient-decepticon;
+    }
+}
