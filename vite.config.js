@@ -1,7 +1,7 @@
+import Components from "unplugin-react-components/vite";
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
-import Components from "unplugin-react-components/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
