@@ -9,10 +9,5 @@ $decepticon: red;
 $second: black;
 $synthetic: rgb(48, 254, 48);
 $accent-for-text: #f0f8ff;
-
-%card-gradient-autobot {
-    background: radial-gradient(circle, $autobot, #414b50);
-}
-%card-gradient-decepticon {
-    background: radial-gradient(circle, $decepticon, #414b50);
-}
+$card-gradient-autobot: radial-gradient(circle, $autobot, #414b50);
+$card-gradient-decepticon: radial-gradient(circle, $decepticon, #414b50);

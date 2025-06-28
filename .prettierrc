@@ -1,0 +1,24 @@
+{
+    "tabWidth": 4,
+    "semi": true,
+    "arrowParens": "avoid",
+    "trailingComma": "all",
+    "singleQuote": true,
+    "singleAttributePerLine": true,
+    "endOfLine": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "vueIndentScriptAndStyle": false,
+    "quoteProps": "as-needed",
+    "objectWrap": "preserve",
+    "htmlWhitespaceSensitivity": "css",
+    "printWidth": 100,
+    "overrides": [
+        {
+            "files": ["package-lock.json"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}
