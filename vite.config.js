@@ -1,7 +1,7 @@
 import Components from "unplugin-react-components/vite";
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,6 +14,17 @@ export default defineConfig({
             dts: true,
         }),
     ],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `
+                    @use "@/styles/variables" as *;
+                    @use "@/styles/mixins" as *;
+                    @use "@/styles/darkTheme" as *;
+                `,
+            }
+        }
+    },
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src"),

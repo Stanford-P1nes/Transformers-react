@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import './search.scss'
+import './_search.scss'
 
-export default function Search() {
+export default function UiSearch() {
     let [placeholder, setPlaceholder] = useState('Название персонажа')
     let [visibileButton, setVisibileButton] = useState(false);
 

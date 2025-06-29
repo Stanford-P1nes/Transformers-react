@@ -1,29 +1,35 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-
-import Home from "./components/home/Home";
-import Persons from "./components/persons/Persons";
-import About from "./components/about/About";
-
-import dataPersons from "./data/persons";
+import dataPersons from "@/data/persons";
+import DefaultLayout from "@/layouts/DefaultLayout";
+import Home from "@/pages/Home";
+import About from "@/pages/About";
+import Persons from "@/pages/Persons";
 
 export default function App() {
     return (
-        <>
-            <Router>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route
-                        path="/persons"
-                        element={<Persons data={dataPersons} />}
-                    />
-                    <Route path="/about" element={<About />} />
-                </Routes>
-                <Footer />
-            </Router>
-        </>
+        <Router>
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <DefaultLayout>
+                            <Home />
+                        </DefaultLayout>
+                    }
+                />
+                <Route
+                    path="/persons"
+                    element={<Persons data={dataPersons} />}
+                />
+                <Route
+                    path="/about"
+                    element={
+                        <DefaultLayout>
+                            <About />
+                        </DefaultLayout>
+                    }
+                />
+            </Routes>
+        </Router>
     );
 }

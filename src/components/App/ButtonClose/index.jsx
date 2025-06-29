@@ -1,7 +1,7 @@
 import React from "react";
-import "./buttonClose.scss";
+import "./_buttonClose.scss";
 
-export default function ButtonClose(props) {
+export default function AppButtonClose(props) {
     return (
         <button
             className="button_close about_card__button_close"

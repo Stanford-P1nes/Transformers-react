@@ -1,6 +1,3 @@
-@use '../../sass/base/_colors.scss' as *;
-@use '../../sass/base/_box-shadow.scss' as *;
-
 .about_card {
     position: fixed;
     inset: 0;
@@ -38,8 +35,8 @@
     overflow: hidden;
     transition: transform .5s ease, opacity .5s ease;
     padding: 20px;
-    @extend %card-gradient-autobot;
-    @extend %box-shadow-inset;
+    @include card-gradient-autobot;
+    @include box-shadow-inset;
     @media (max-width: 630px) {
         width: 500px;
     }

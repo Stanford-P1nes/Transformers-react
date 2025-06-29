@@ -1,8 +1,8 @@
 import React from 'react'
 import { AiOutlineCopyright } from "react-icons/ai";
-import './footer.scss';
+import './_footer.scss';
 
-export default function Footer() {
+export default function AppFooter() {
     return (
         <footer className="footer">
             <div className="container">

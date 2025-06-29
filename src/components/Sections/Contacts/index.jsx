@@ -1,8 +1,7 @@
 import React from "react";
-import "./contacts.scss";
-import '@/sass/base/button.scss'
+import "./_contacts.scss";
 
-export default function Contacts() {
+export default function SectionContacts() {
     return (
         <article className="contacts">
             <em className="contacts_item">

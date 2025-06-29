@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "./logo.scss";
+import "./_logo.scss";
 
-export default function Logo() {
+export default function AppLogo() {
     return (
         <Link to="/" className="logo">
             TFPrime

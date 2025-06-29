@@ -12,7 +12,7 @@ export const dataPersons = [
         enemy: "Мегатрон",
         interestingFacts:
             "Носит Матрицу Лидерства, которая символизирует надежду для автоботов",
-        img: "Оптимус-Прайм.jpeg",
+        img: "/images/images/Оптимус-Прайм.jpeg",
     },
     {
         id: 2,
@@ -26,7 +26,7 @@ export const dataPersons = [
         enemy: "Десептиконы, особенно Мегатрон",
         interestingFacts:
             "Видит в Оптимусе идеального лидера и стремиться быть похожим на него",
-        img: "Ультра-Магнус-2.jpeg",
+        img: "/images/Ультра-Магнус-2.jpeg",
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ export const dataPersons = [
         enemy: "Десептиконы",
         interestingFacts:
             "Хотя он нередко ворчит, его вклад в команду неоценим, особенно когда дело касается технологий",
-        img: "Ретчет.jpeg",
+        img: "/images/Ретчет.jpeg",
     },
     {
         id: 4,
@@ -54,7 +54,7 @@ export const dataPersons = [
         enemy: "Старскрим и Эйрахнида",
         interestingFacts:
             "Потеряла двух партнеров в бою, что сделало её более замкнутой и целеустремленной",
-        img: "Арси.jpeg",
+        img: "/images/Арси.jpeg",
     },
     {
         id: 5,
@@ -68,7 +68,7 @@ export const dataPersons = [
         enemy: "Десептиконы, особенно Брейкдаун",
         interestingFacts:
             "Несмотря на свою мощь, он заботится о своих товарищах и особенно близок с Мико",
-        img: "Балкхэд.jpeg",
+        img: "/images/Балкхэд.jpeg",
     },
     {
         id: 6,
@@ -82,7 +82,7 @@ export const dataPersons = [
         enemy: "Мегатрон и десептиконы",
         interestingFacts:
             "Не может говорить из-за повреждений голосового модуля, но это не мешает ему быть эффективным членом команды",
-        img: "Бамблби.jpeg",
+        img: "/images/Бамблби.jpeg",
     },
     {
         id: 7,
@@ -96,7 +96,7 @@ export const dataPersons = [
         enemy: "Десептиконы",
         interestingFacts:
             "Ему суждено было нести Матрицу Лидерства, но он уступил Оптимусу, признавая его право",
-        img: "Смоуксрин.jpeg",
+        img: "/images/Смоуксрин.jpeg",
     },
     {
         id: 8,
@@ -109,7 +109,7 @@ export const dataPersons = [
         origin: "Кибертрон",
         enemy: "Десептиконы",
         interestingFacts: "Бывший член Врекеров (элитный отряд автоботов)",
-        img: "Уилджек.jpeg",
+        img: "/images/Уилджек.jpeg",
     },
     {
         id: 9,
@@ -123,7 +123,7 @@ export const dataPersons = [
         enemy: "Десептиконы",
         interestingFacts:
             "Был убит в первом эпизоде 'Трансформеры прайм', что стало ударом для команды автоботов",
-        img: "Клиффджампер.jpeg",
+        img: "/images/Клиффджампер.jpeg",
     },
     // Десептиконы
     {
@@ -138,7 +138,7 @@ export const dataPersons = [
         enemy: "Оптимус Прайм и автоботы",
         interestingFacts:
             "Когда-то был союзником Оптимуса, но рашелся с ним из-за своих радикальных методов",
-        img: "Мегатрон.jpeg",
+        img: "/images/Мегатрон.jpeg",
     },
     {
         id: 11,
@@ -152,7 +152,7 @@ export const dataPersons = [
         enemy: "Автоботы",
         interestingFacts:
             "Никогда не говорит, вместо этого использует записи голосов других двух персонажей",
-        img: "Саундвейв.jpeg",
+        img: "/images/Саундвейв.jpeg",
     },
     {
         id: 12,
@@ -166,7 +166,7 @@ export const dataPersons = [
         enemy: "Автоботы, а иногда Мегатрон",
         interestingFacts:
             "Постоянно пытается свергнуть Мегатрона, но у него это никогда не получается",
-        img: "Старскрим.jpeg",
+        img: "/images/Старскрим.jpeg",
     },
     {
         id: 13,
@@ -180,7 +180,7 @@ export const dataPersons = [
         enemy: "Автоботы",
         interestingFacts:
             "Обожает свою альт-форму и ненавидит, когда её царапаут",
-        img: "Нокаут.jpeg",
+        img: "/images/Нокаут.jpeg",
     },
     {
         id: 14,
@@ -193,7 +193,7 @@ export const dataPersons = [
         origin: "Кибертрон",
         enemy: "Автоботы",
         interestingFacts: "Был одним из самых преданных солдат Мегатрона",
-        img: "Скайквейк.jpeg",
+        img: "/images/Скайквейк.jpeg",
     },
     {
         id: 15,
@@ -207,7 +207,7 @@ export const dataPersons = [
         enemy: "Автоботы",
         interestingFacts:
             "Глубого скорбит по своему брату-близнецу Скайсквейку",
-        img: "Дредвинг.jpeg",
+        img: "/images/Дредвинг.jpeg",
     },
     {
         id: 16,
@@ -220,7 +220,7 @@ export const dataPersons = [
         origin: "Кибертрон",
         enemy: "Автоботы",
         interestingFacts: "Солдал предаконов с помощью клонирования",
-        img: "Шоквейв.jpeg",
+        img: "/images/Шоквейв.jpeg",
     },
     {
         id: 17,
@@ -233,7 +233,7 @@ export const dataPersons = [
         origin: "Кибертрон",
         enemy: "Арси, автоботы",
         interestingFacts: "Собирала трофеи с убитых противников",
-        img: "Эйрахнида.jpeg",
+        img: "/images/Эйрахнида.jpeg",
     },
     {
         id: 18,
@@ -247,7 +247,7 @@ export const dataPersons = [
         enemy: "Балкхэд",
         interestingFacts:
             "Был захвачен организацией MECH, что стало его концом",
-        img: "Брейкдаун.jpeg",
+        img: "/images/Брейкдаун.jpeg",
     },
     // Прелаконы
     {
@@ -261,7 +261,7 @@ export const dataPersons = [
         origin: "Создан Шоквейвом",
         enemy: "Автоботы и десептиконы",
         interestingFacts: "Хотел возродить предаконов и вернуть им былую славу",
-        img: "Предакинг.jpeg",
+        img: "/images/Предакинг.jpeg",
     },
     // Прочее
     {
@@ -276,7 +276,7 @@ export const dataPersons = [
         enemy: "Юникрон",
         interestingFacts:
             "Его сущьность живет внутри Кибертрона и Матрицы Лидерства",
-        img: "Праймус.jpeg",
+        img: "/images/Праймус.jpeg",
     },
     {
         id: 21,
@@ -290,7 +290,7 @@ export const dataPersons = [
         enemy: "Праймус и трансформеры",
         interestingFacts:
             "В 'Трансформеры Прайм' его сущьность находилось в ядре Земли",
-        img: "Юникрон.jpeg",
+        img: "/images/Юникрон.jpeg",
     },
     // Люди
     {
@@ -301,7 +301,7 @@ export const dataPersons = [
         origin: "Земля",
         interestingFacts:
             "Интересуется древними технологиями и часто вовлекает Рассела в свои исследования",
-        img: "",
+        img: "/images/",
     },
     {
         id: 23,
@@ -311,7 +311,7 @@ export const dataPersons = [
         origin: "Земля",
         interestingFacts:
             "Интересуется технологиями, что помогает в миссиях с автоботами",
-        img: "",
+        img: "/images/",
     },
     {
         id: 24,
@@ -321,7 +321,7 @@ export const dataPersons = [
         origin: "Земля",
         interestingFacts:
             "Был первым человеком, встретившим Арси, и часто споровождал её в миссиях",
-        img: "Джек Дарби.jpeg",
+        img: "/images/Джек Дарби.jpeg",
     },
     {
         id: 25,
@@ -331,7 +331,7 @@ export const dataPersons = [
         origin: "Земля",
         interestingFacts:
             "После того как узнала о трансформерах, стала активным помошником автоботов",
-        img: "Джун Дарби.jpeg",
+        img: "/images/Джун Дарби.jpeg",
     },
     {
         id: 26,
@@ -340,7 +340,7 @@ export const dataPersons = [
         personality: "Дерзкая, энергичная, бесстрашная",
         origin: "Земля, Япония",
         interestingFacts: "Часто вмешивается в битвы, несмотря на опасность",
-        img: "Мико Накадаи.jpeg",
+        img: "/images/Мико Накадаи.jpeg",
     },
     {
         id: 27,
@@ -350,7 +350,7 @@ export const dataPersons = [
         origin: "Земля",
         interestingFacts:
             "Помог Ретчету и Бамблби взломать множество систем десептиконов",
-        img: "Рафаэль.jpeg",
+        img: "/images/Рафаэль.jpeg",
     },
     {
         id: 28,
@@ -360,7 +360,7 @@ export const dataPersons = [
         origin: "Земля",
         interestingFacts:
             "Использовал технологии трансформеров для создания оружия",
-        img: "",
+        img: "/images/",
     },
     {
         id: 29,
@@ -370,7 +370,7 @@ export const dataPersons = [
         origin: "Земля",
         interestingFacts:
             "Несмотря на сложный характер, он всегда помогает автоботам в борьбе с десептиконами",
-        img: "Уильям Фоулер.jpeg",
+        img: "/images/Уильям Фоулер.jpeg",
     },
 ];
 

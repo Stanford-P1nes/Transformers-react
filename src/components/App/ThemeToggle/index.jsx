@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Autobots from "@/assets/ico/Autobots-ico.png";
-import Decepticons from "@/assets/ico/Decepticons-ico.png";
-import "./themeToggle.scss";
+import Autobots from "/icons/Autobots-ico.png";
+import Decepticons from "/icons/Decepticons-ico.png";
+import "./_themeToggle.scss";
 
-export default function ThemeToggle() {
+export default function AppThemeToggle() {
     let [theme, setTheme] = useState(false);
     if (theme) {
         document.body.classList.add("dark_theme");

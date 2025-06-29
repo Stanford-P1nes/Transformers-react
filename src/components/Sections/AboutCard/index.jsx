@@ -1,8 +1,8 @@
 import React from "react";
-import ButtonClose from "@/components/buttonClose/buttonClose.jsx";
-import "./aboutCard.scss";
+import AppButtonClose from "@/components/App/ButtonClose";
+import "./_aboutCard.scss";
 
-export default function AboutCard(props) {
+export default function SectionAboutCard(props) {
     let startY = 0; // Начальная координата по Y
     function touchStart(event) {
         startY = event.touches[0].clientY; // Сохраняем начальную точку касания
@@ -76,7 +76,7 @@ export default function AboutCard(props) {
                         {props.data.interestingFacts}
                     </q>
                 </div>
-                <ButtonClose setSelectedCard={props.setSelectedCard} />
+                <AppButtonClose setSelectedCard={props.setSelectedCard} />
             </div>
         </aside>
     );

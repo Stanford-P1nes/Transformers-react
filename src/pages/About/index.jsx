@@ -1,6 +1,5 @@
-import React from "react";
-import Contacts from "@/components/contacts/Contacts.jsx";
-import "./about.scss";
+import SectionContacts from "@/components/Sections/Contacts";
+import "./_about.scss";
 
 export default function About() {
     return (
@@ -51,7 +50,7 @@ export default function About() {
                         </div>
                     </blockquote>
                     <aside className="about_saide">
-                        <Contacts />
+                        <SectionContacts />
                     </aside>
                 </div>
             </div>

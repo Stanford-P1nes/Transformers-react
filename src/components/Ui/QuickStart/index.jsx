@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './quickStart.scss';
-import '@/sass/base/wrapper_text.scss';
+import './_quickStart.scss';
 
-export default function QuickStart() {
+export default function UiQuickStart() {
     return (
         <section className="quick_start">
             <div className="wrapper_text wrapper_text__quick_start">

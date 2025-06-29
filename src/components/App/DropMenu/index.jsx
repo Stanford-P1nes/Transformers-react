@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { RiArrowUpDoubleFill } from "react-icons/ri";
-import './dropMenu.scss';
+import './_dropMenu.scss';
 
-export default function DropMenu() {
+export default function AppDropMenu() {
     let [stateDropMenu, setStateDropMenu] = useState(false);
     let visibility = null;
     function handleClick() {

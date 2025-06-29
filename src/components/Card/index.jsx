@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoPersonSharp } from "react-icons/io5";
-import './card.scss'
+import './_card.scss'
 
 export default function Card(props) {
     function handleClick() {
