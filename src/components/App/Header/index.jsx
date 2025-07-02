@@ -1,4 +1,3 @@
-import React from 'react'
 import AppLogo from '../Logo';
 import UiMenu from '@/components/Ui/Menu';
 import AppThemeToggle from '../ThemeToggle';
@@ -9,7 +8,7 @@ export default function AppHeader() {
     return (
         <header className="header">
             <div className="container">
-                <div className="header_inner">
+                <div className="header__inner">
                     <AppLogo />
                     <UiMenu />
                     <AppThemeToggle />

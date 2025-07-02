@@ -1,7 +1,4 @@
-@import '../../sass/base/_colors.scss';
-@import '../../sass/base/_box-shadow.scss';
-
-.search_box {
+.search {
     position: relative;
     display: flex;
     align-items: center;
@@ -10,7 +7,35 @@
     padding: 0 40px;
     padding-left: 10px;
     background-color: white;
-    @extend %box-shadow-inset;
+    margin-left: 30px;
+    overflow: hidden;
+    z-index: 1000;
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        background-color: $autobot;
+        width: 30px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 900;
+        font-size: 1rem;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.1s ease;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
     @media (max-width: 850px) {
         width: 100%;
     }
@@ -18,35 +43,4 @@
         width: 150px;
         margin-left: 10px;
     }
-    margin-left: 30px;
-    overflow: hidden;
-    z-index: 1000;
-}
-
-.button_search {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    background-color: $autobot;
-    width: 30px;
-    aspect-ratio: 1;
-    border-radius: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    font-weight: 900;
-    font-size: 1rem;
-
-    visibility: hidden;
-    opacity: 0;
-    transition: all .1s ease;
-}
-
-.button_search.active {
-    visibility: visible;
-    opacity: 1;
 }

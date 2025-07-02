@@ -1,5 +1,3 @@
-import React from "react";
-import AppButtonClose from "@/components/App/ButtonClose";
 import "./_aboutCard.scss";
 
 export default function SectionAboutCard(props) {
@@ -24,60 +22,95 @@ export default function SectionAboutCard(props) {
     }
     function transitionEnd() {
         //Когда анимация завершена, скрываем карточку также как и при нажатии на крестик
-        props.setSelectedCard(null);
+        props.modal(false);
     }
     return (
-        <aside className="about_card">
+        <article className="about-card">
             <div
-                className="wrapper_info__about_card"
+                className="about-card__wrapper-info"
                 onTouchStart={touchStart}
                 onTouchMove={touchMove}
                 onTransitionEnd={transitionEnd}
             >
-                <div className="wrapper_info__top_line">
+                <article className="about-card__header">
                     <img
-                        className="about_card_image"
-                        src={`src/assets/image/${props.data.img}`}
-                        alt={props.data.name}
+                        src={props.person.img || "*Неопределено*"}
+                        alt={props.person.name || "*Неопределено*"}
                     />
+                </article>
+
+                <div className="about-card__content">
+                    <h3 className="about-card__name">
+                        {props.person.name || "*Неопределено*"}
+                    </h3>
+                    <div className="about-card__content-grid">
+                        <div className="about-card__grid-item">
+                            <p className="about-card__title">Фракция: </p>
+                            <p>{props.person.fraction || "Одиночка"}</p>
+                        </div>
+                        <div className="about-card__grid-item">
+                            <p className="about-card__title">Звание: </p>
+                            {Array.isArray(props.person.ranks) &&
+                            props.person.ranks.length > 0 ? (
+                                props.person.ranks.map((rank, idx) => (
+                                    <p key={idx}>{rank}</p>
+                                ))
+                            ) : (
+                                <p>Без ранга</p>
+                            )}
+                        </div>
+                        <div className="about-card__grid-item">
+                            <p className="about-card__title">Альт-форма: </p>
+                            {Array.isArray(props.person.altForms) &&
+                            props.person.altForms.length > 0 ? (
+                                props.person.altForms.map((altForm, idx) => (
+                                    <p key={idx}>{altForm}</p>
+                                ))
+                            ) : (
+                                <p>Не трансформируется</p>
+                            )}
+                        </div>
+                        <div className="about-card__grid-item">
+                            <p className="about-card__title">Оружие: </p>
+                            {Array.isArray(props.person.weapons) &&
+                            props.person.weapons.length > 0 ? (
+                                props.person.weapons.map((weapon, idx) => (
+                                    <p key={idx}>{weapon}</p>
+                                ))
+                            ) : (
+                                <p>Безоружен</p>
+                            )}
+                        </div>
+                        <div className="about-card__grid-item">
+                            <p className="about-card__title">Происхождение: </p>
+                            <p>{props.person.origin || "Неизвестно"}</p>
+                        </div>
+                        <div className="about-card__grid-item">
+                            <p className="about-card__title">Враг: </p>
+                            {Array.isArray(props.person.enemys) &&
+                            props.person.enemys.length > 0 ? (
+                                props.person.enemys.map((enemy, idx) => (
+                                    <p key={idx}>{enemy}</p>
+                                ))
+                            ) : (
+                                <p>Врагов нет</p>
+                            )}
+                        </div>
+                    </div>
+                    <p className="about-card__description">
+                        {props.person.personality || "Личность не известна"}
+                    </p>
+                    {/* <q className="about-card__interestingFacts">
+                        {props.person.interestingFacts || "*Неопределено*"}
+                    </q> */}
                 </div>
-                <div className="wrapper_info__bottom_line">
-                    <strong className="design_bottom_line person_name">
-                        {props.data.name}
-                    </strong>
-                    <p className="design_bottom_line person_fraction">
-                        <em>Фракция: </em>
-                        <span>{props.data.fraction}</span>
-                    </p>
-                    <p className="design_bottom_line person_rank">
-                        <em>Звание: </em>
-                        <span>{props.data.rank}</span>
-                    </p>
-                    <p className="design_bottom_line person_altForm">
-                        <em>Альт-форма: </em>
-                        {props.data.altForm}
-                    </p>
-                    <p className="design_bottom_line person_weapon">
-                        <em>Оружие: </em>
-                        <span>{props.data.weapon}</span>
-                    </p>
-                    <p className="design_bottom_line person_personality">
-                        {props.data.personality}
-                    </p>
-                    <p className="design_bottom_line person_origin">
-                        <em>Происхождение: </em>
-                        <span>{props.data.origin}</span>
-                    </p>
-                    <p className="design_bottom_line person_enemy">
-                        <em>Враг: </em>
-                        <sapn>{props.data.enemy}</sapn>
-                    </p>
-                    <q className="design_bottom_line person_interestingFacts">
-                        {props.data.interestingFacts}
-                    </q>
-                </div>
-                <AppButtonClose setSelectedCard={props.setSelectedCard} />
+                <button
+                    className="about-card__button"
+                    onClick={() => props.modal(false)}
+                >
+                    X
+                </button>
             </div>
-        </aside>
+        </article>
     );
 }

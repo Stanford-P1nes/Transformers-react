@@ -1,12 +1,13 @@
+import { useState } from "react";
+import "./_persons.scss";
 import SectionAboutCard from "@/components/Sections/AboutCard";
 import Card from "@/components/Card";
-import "./_persons.scss";
-import { useState } from "react";
+import dataPersons from "@/data/persons";
 
-export default function Persons(props) {
+export default function Persons() {
     // состояние раскрытия карточки AboutCard
-    let [selectedCard, setSelectedCard] = useState(null);
-    if (selectedCard) {
+    let [modal, setModal] = useState(false);
+    if (modal) {
         document.body.classList.add("scrollBarHide");
     } else {
         document.body.classList.remove("scrollBarHide");
@@ -15,13 +16,18 @@ export default function Persons(props) {
         <section className="section persons-section">
             <div className="container">
                 <div className="persons-section__card-grid">
-                    <Card data={props.data} onCardClick={setSelectedCard} />
+                    {dataPersons.map((el) => {
+                        return (
+                            <Card
+                                person={el}
+                                key={el.id}
+                                transferData={setModal}
+                            />
+                        );
+                    })}
                 </div>
-                {selectedCard && (
-                    <SectionAboutCard
-                        setSelectedCard={setSelectedCard}
-                        data={selectedCard}
-                    />
+                {modal && (
+                    <SectionAboutCard modal={setModal} person={modal} />
                 )}
             </div>
         </section>

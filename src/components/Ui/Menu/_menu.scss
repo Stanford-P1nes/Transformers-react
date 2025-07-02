@@ -6,37 +6,33 @@
         display: none;
     }
     z-index: 1000;
-}
 
-.menu_item {
-    position: relative;
-    text-wrap: nowrap;
-    text-decoration: none;
-    color: $primary-light;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.menu_item__menu {
-    margin-right: 20px;
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.manu_active {
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: $primary-light;
-        transition: all .2s ease;
-    }
-    &:hover::after {
-        width: 100%;
+    &__link {
+        position: relative;
+        text-wrap: nowrap;
+        text-decoration: none;
+        color: $primary-light;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-right: 20px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $primary-light;
+            transition: all .2s ease;
+        }
+        &:hover::after {
+            width: 100%;
+        }
     }
 }

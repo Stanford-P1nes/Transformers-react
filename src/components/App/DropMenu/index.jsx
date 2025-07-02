@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { RiArrowUpDoubleFill } from "react-icons/ri";
@@ -13,27 +13,25 @@ export default function AppDropMenu() {
     stateDropMenu ? (visibility = "show") : (visibility = null);
     
     return (
-        <menu className={`drop_menu ${visibility}`}>
-            <Link className="menu_item menu_item__drop_menu manu_active" to="/">
+        <menu className={`drop-menu ${visibility}`}>
+            <Link className="drop-menu__link" to="/">
                 Главная
             </Link>
-            <Link
-                className="menu_item menu_item__drop_menu manu_active"
-                to="/persons"
-            >
+            <Link className="drop-menu__link" to="/persons">
                 Персонажи
             </Link>
-            <Link
-                className="menu_item menu_item__drop_menu manu_active"
-                to="/about"
-            >
+            <Link className="drop-menu__link" to="/about">
                 О нас
             </Link>
             <button
-                className="button_drop_menu button_drop_menu__drop_menu"
+                className="drop-menu__button"
                 onClick={handleClick}
             >
-                {stateDropMenu ? <RiArrowUpDoubleFill /> : <MdOutlineKeyboardDoubleArrowDown />}
+                {stateDropMenu ? (
+                    <RiArrowUpDoubleFill />
+                ) : (
+                    <MdOutlineKeyboardDoubleArrowDown />
+                )}
             </button>
         </menu>
     );

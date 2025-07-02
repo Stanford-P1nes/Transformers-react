@@ -1,17 +1,16 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 import './_menu.scss'
 
 export default function UiMenu() {
     return (
         <nav className="menu">
-            <Link className="menu_item menu_item__menu manu_active" to="/">
+            <Link className="menu__link" to="/">
                 Главная
             </Link>
-            <Link className="menu_item menu_item__menu manu_active" to="/persons">
+            <Link className="menu__link" to="/persons">
                 Персонажи
             </Link>
-            <Link className="menu_item menu_item__menu manu_active" to="/about">
+            <Link className="menu__link" to="/about">
                 О нас
             </Link>
         </nav>

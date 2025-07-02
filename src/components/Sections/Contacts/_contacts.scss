@@ -7,18 +7,18 @@
     border-radius: 10px;
     padding: 20px;
     margin: 0 auto;
-    @include box-shadow-inset;
-}
 
-.contacts_item {
-    color: $primary-light;
-    margin-bottom: 10px;
-    &:last-child {
-        margin-bottom: 0;
+    &__social {
+        color: $primary-light;
+        margin-bottom: 10px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    
+        a {
+            color: $synthetic !important;
+            margin-left: 10px;
+        }
     }
-}
-
-.contacts_item a {
-    color: $synthetic !important;
-    margin-left: 10px;
 }

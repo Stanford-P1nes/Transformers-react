@@ -1,64 +1,62 @@
 .card {
     position: relative;
-    aspect-ratio: 1/1;
-    border-radius: 5px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: box-shadow .5s ease, transform .5s ease, opacity .5s ease;
-    z-index: 777;
-}
-
-.card_section_persons {
+    border-radius: 12px;
+    transition: box-shadow 0.5s ease, transform 0.5s ease, opacity 0.5s ease;
     border: 1px solid $autobot;
     box-shadow: 5px 5px 0px $autobot;
-    transform: translateY(50px);
-    opacity: 0;
-}
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 777;
 
-.card_effects {
+    &:not(.show) {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    &.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
     &:hover {
         box-shadow: 0px 0px 0px $autobot;
-        transform: translate(5px, 5px)
+        transform: translate(5px, 5px);
     }
     &:hover > .wrapper_card_img img {
         transform: scale(1.05);
     }
-}
 
-.show {
-    transform: translateY(0);
-    opacity: 1;
-}
+    &__image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-color: $primary-dark;
 
-.card .wrapper_card_img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: $primary-dark;
-}
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+            color: $primary-light;
+        }
+    }
 
-.card img {
-    height: 100%;
-    user-select: none;
-    transition: transform .5s ease;
-    color: $primary-light;
-}
-
-.card .card_ico {
-    margin: auto;
-    font-size: 3rem;
-    color: $primary-light;
-}
-
-.card_name {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: clamp(0.75rem, 3vw, 1.5rem);
-    color: $primary-light;
-    text-wrap: nowrap;
-    text-shadow: 1px 1px 3px black;
+    &__name {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(0.75rem, 3vw, 1.5rem);
+        color: $primary-light;
+        text-wrap: nowrap;
+        text-shadow: 1px 1px 3px black;
+    }
+    
+    &__icon {
+        margin: auto;
+        font-size: 3rem;
+        color: $primary-light;
+    }
 }

@@ -20,7 +20,6 @@
         border-left: 4px solid $accent; // Линия как акцент
         background-color: $accent-for-text;
         border-radius: 8px;
-        @include box-shadow-inset;
 
         &__top_line {
             display: flex;
@@ -52,7 +51,6 @@
         padding: 15px;
         background-color: $unactive;
         border-radius: 8px;
-        @include box-shadow-inset;
     }
 }
 

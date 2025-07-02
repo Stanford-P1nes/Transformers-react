@@ -3,13 +3,10 @@
     background-color: $autobot;
     box-shadow: 0 -20px 0 -15px $primary-dark;
     z-index: 1000;
-}
 
-.footer_inner {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer_inner p {
-    color: $primary-light;
+    &__inner {
+        padding: 20px 0;
+        text-align: center;
+        color: $primary-light;
+    }
 }

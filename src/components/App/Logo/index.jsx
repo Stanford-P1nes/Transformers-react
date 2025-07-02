@@ -4,7 +4,7 @@ import "./_logo.scss";
 export default function AppLogo() {
     return (
         <Link to="/" className="logo">
-            TFPrime
+            TF
         </Link>
     );
 }

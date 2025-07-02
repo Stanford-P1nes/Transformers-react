@@ -1,10 +1,9 @@
-import React from 'react'
 import { IoPersonSharp } from "react-icons/io5";
 import './_card.scss'
 
 export default function Card(props) {
     function handleClick() {
-        props.onCardClick(props.data);
+        props.transferData(props.person);
     }
     
     const observer = new IntersectionObserver(entries => {
@@ -24,20 +23,20 @@ export default function Card(props) {
     }, 0)
     return (
         <article
-            className="card card_section_persons card_effects"
+            className="card"
             onClick={handleClick}
         >
-            <div className="wrapper_card_img">
-                {props.data.img !== "" ? (
+            <div className="card__image">
+                {props.person.img ? (
                     <img
-                        src={`./src/assets/image/${props.data.img}`}
-                        alt={props.data.name}
+                        src={props.person.img}
+                        alt={props.person.name}
                     />
                 ) : (
-                    <IoPersonSharp className='card_ico'/>
+                    <IoPersonSharp className='card__icon'/>
                 )}
             </div>
-            <strong className="card_name">{props.data.name}</strong>
+            <h3 className="card__name">{props.person.name || '*Неопределено*'}</h3>
         </article>
     );
 }

@@ -4,7 +4,7 @@
 
 @import "normalize" layer(normalize);
 @import "reset" layer(reset);
-@import url("https://fonts.googleapis.com/css?family=Tektur");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium");
 
 html {
     scroll-behavior: smooth;
@@ -19,7 +19,7 @@ html {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-family: "Tektur", sans-serif;
+    font-family: "Oxanium", sans-serif;
     letter-spacing: 0.1rem;
     line-height: 1.05rem;
 }
@@ -86,9 +86,4 @@ input {
 
 .section {
     padding: 50px 0;
-}
-
-.wrapper_text {
-    padding: 15px;
-    border-radius: 8px;
 }

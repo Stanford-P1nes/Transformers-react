@@ -1,18 +1,111 @@
-.about_card {
+.about-card {
     position: fixed;
-    inset: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.17);
     backdrop-filter: blur(4.2px);
     -webkit-backdrop-filter: blur(4.2px);
     -webkit-backdrop-filter: blur(4.2px);
     display: flex;
     z-index: 1100;
-    transition: opacity .5s ease;
+    transition: opacity 0.5s ease;
 
     animation-name: openAboutCard;
     animation-timing-function: ease;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
+
+    &__wrapper-info {
+        position: relative;
+        width: 560px;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        animation-name: openItem;
+        animation-timing-function: ease;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        @media (max-width: 630px) {
+            width: 500px;
+        }
+        @media (max-width: 560px) {
+            width: 400px;
+        }
+        @media (max-width: 430px) {
+            width: 350px;
+        }
+    }
+
+    &__header {
+        overflow: hidden;
+        margin-bottom: 10px;
+        border-radius: $border-radius-lg;
+        border: 2px solid $primary-light;
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        color: $primary-dark;
+        background-color: transparent;
+        margin-bottom: 50px;
+        background-color: $primary-light;
+        border-radius: $border-radius-lg;
+        padding: 16px;
+    }
+
+    &__name {
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+    &__content-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        font-size: 12px;
+        margin: 16px 0;
+    }
+    
+    &__grid-item {
+        background-color: $primary-light;
+        color: $autobot;
+        border-radius: $border-radius-sm;
+        padding: 4px 6px;
+        color: $primary-dark;
+        box-shadow: 1px 1px 5px rgb(174, 174, 174);
+    }
+
+    &__title {
+        color: $extra;
+    }
+
+    &__button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30px;
+        padding: 24px;
+        font-size: 36px;
+        color: $primary-light;
+        background-color: $extra;
+        border-radius: $border-radius-lg;
+        width: max-content;
+        aspect-ratio: 1;
+    }
 }
 
 @keyframes openAboutCard {
@@ -24,40 +117,12 @@
     }
 }
 
-.wrapper_info__about_card {
-    position: relative;
-    width: 560px;
-    height: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform .5s ease, opacity .5s ease;
-    padding: 20px;
-    @include card-gradient-autobot;
-    @include box-shadow-inset;
-    @media (max-width: 630px) {
-        width: 500px;
-    }
-    @media (max-width: 560px) {
-        width: 400px;
-    }
-    @media (max-width: 430px) {
-        width: 350px;
-    }
-    animation-name: openItem;
-    animation-timing-function: ease;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-}
-
 @keyframes openItem {
     0% {
-        transform: translateY(20px) scale(.9);
+        transform: translateY(20px) scale(0.9);
     }
     20% {
-        transform: translateY(20px) scale(.9);
+        transform: translateY(20px) scale(0.9);
     }
     60% {
         transform: translateY(-10px) scale(1);
@@ -68,38 +133,4 @@
     100% {
         transform: translateY(0) scale(1);
     }
-}
-
-.wrapper_info__top_line {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    margin-bottom: 20px;
-}
-
-.about_card_image {
-    object-fit: contain;
-    border-radius: 20px;
-}
-
-.wrapper_info__bottom_line {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    color: $primary-light;
-    overflow-y: auto;
-    background-color: transparent;
-    margin-bottom: 20px;
-}
-
-.design_bottom_line {
-    margin-bottom: .3125rem;
-    font-size: .75rem;
-}
-
-.person_name {
-    font-size: 1.5rem;
-    margin-bottom: .625rem;
 }

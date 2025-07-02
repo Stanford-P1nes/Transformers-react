@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import dataPersons from "@/data/persons";
+// import dataPersons from "@/data/persons";
 import DefaultLayout from "@/layouts/DefaultLayout";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
@@ -19,7 +19,11 @@ export default function App() {
                 />
                 <Route
                     path="/persons"
-                    element={<Persons data={dataPersons} />}
+                    element={
+                        <DefaultLayout>
+                            <Persons />
+                        </DefaultLayout>
+                    }
                 />
                 <Route
                     path="/about"

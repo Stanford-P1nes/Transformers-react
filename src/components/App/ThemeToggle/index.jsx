@@ -6,31 +6,29 @@ import "./_themeToggle.scss";
 export default function AppThemeToggle() {
     let [theme, setTheme] = useState(false);
     if (theme) {
-        document.body.classList.add("dark_theme");
+        document.body.classList.add("dark-theme");
     } else {
-        document.body.classList.remove("dark_theme");
+        document.body.classList.remove("dark-theme");
     }
 
     return (
         <button
             onClick={() => setTheme(!theme)}
             type="button"
-            className={`theme_toggle header_inner__theme_toggle ${
-                theme && "active"
-            }`}
+            className={`theme-toggle ${theme && "active"}`}
         >
-            <div className="themeIconBlock">
+            <div className="theme-toggle__icon theme-toggle__icon_light">
                 <img
                     src={Autobots}
                     alt="Иконка фракции автоботов"
-                    className={`icon_theme icon_light ${theme && "active"}`}
+                    className={`${theme && "active"}`}
                 />
             </div>
-            <div className="themeIconBlock">
+            <div className="theme-toggle__icon theme-toggle__icon_dark">
                 <img
                     src={Decepticons}
                     alt="Иконка фракции десептиконов"
-                    className={`icon_theme icon_dark ${theme && "active"}`}
+                    className={`${theme && "active"}`}
                 />
             </div>
         </button>

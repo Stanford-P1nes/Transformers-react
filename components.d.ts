@@ -6,7 +6,6 @@ declare global{
 	const About: typeof import('./src/pages/About/index')['default']
 	const Home: typeof import('./src/pages/Home/index')['default']
 	const Persons: typeof import('./src/pages/Persons/index')['default']
-	const AppButtonClose: typeof import('./src/components/App/ButtonClose/index')['default']
 	const AppDropMenu: typeof import('./src/components/App/DropMenu/index')['default']
 	const AppFooter: typeof import('./src/components/App/Footer/index')['default']
 	const AppHeader: typeof import('./src/components/App/Header/index')['default']

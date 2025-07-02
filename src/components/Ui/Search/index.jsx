@@ -7,7 +7,7 @@ export default function UiSearch() {
     let [visibileButton, setVisibileButton] = useState(false);
 
     return (
-        <form className="search_box">
+        <form className="search">
             <input
                 type="text"
                 placeholder={placeholder}
@@ -24,7 +24,7 @@ export default function UiSearch() {
                 }}
             />
 
-            <button className={`button_search ${visibileButton && "active"}`}>
+            <button className={`search__button ${visibileButton && "active"}`}>
                 <CiSearch />
             </button>
         </form>
