@@ -1,8 +1,8 @@
-import AppLogo from '../Logo';
-import UiMenu from '@/components/Ui/Menu';
-import AppThemeToggle from '../ThemeToggle';
-import AppDropMenu from '../DropMenu';
-import './_header.scss'
+import AppLogo from "../Logo";
+import UiMenu from "@/components/Ui/Menu";
+import AppThemeToggle from "../ThemeToggle";
+import AppDropMenu from "../DropMenu";
+import "./_header.scss";
 
 export default function AppHeader() {
     return (

@@ -40,6 +40,7 @@ html {
 }
 
 body {
+    --light-or-dark-side: rgb(0, 88, 252);
     background-color: $primary-light;
     transition: background 0.2s ease;
     overflow-x: hidden;

@@ -26,9 +26,7 @@ export default function Persons() {
                         );
                     })}
                 </div>
-                {modal && (
-                    <SectionAboutCard modal={setModal} person={modal} />
-                )}
+                {modal && <SectionAboutCard modal={setModal} person={modal} />}
             </div>
         </section>
     );

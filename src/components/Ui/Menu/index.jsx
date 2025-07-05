@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './_menu.scss'
+import { Link } from "react-router-dom";
+import "./_menu.scss";
 
 export default function UiMenu() {
     return (

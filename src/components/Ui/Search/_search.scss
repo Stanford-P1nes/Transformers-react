@@ -16,7 +16,7 @@
         top: 50%;
         right: 5px;
         transform: translateY(-50%);
-        background-color: $autobot;
+        background-color: var(--light-or-dark-side);
         width: 30px;
         aspect-ratio: 1;
         border-radius: 100%;

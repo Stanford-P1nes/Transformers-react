@@ -5,7 +5,7 @@ export default function DefaultLayout({ children }) {
     return (
         <>
             <AppHeader />
-            <main>{ children }</main>
+            <main>{children}</main>
             <AppFooter />
         </>
     );

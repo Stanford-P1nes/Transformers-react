@@ -1,9 +1,9 @@
 .contacts {
-    background-color: $autobot;
+    background-color: var(--light-or-dark-side);
     display: flex;
     flex-direction: column;
     width: max-content;
-    background-color: $autobot;
+    background-color: var(--light-or-dark-side);
     border-radius: 10px;
     padding: 20px;
     margin: 0 auto;
@@ -11,11 +11,11 @@
     &__social {
         color: $primary-light;
         margin-bottom: 10px;
-    
+
         &:last-child {
             margin-bottom: 0;
         }
-    
+
         a {
             color: $synthetic !important;
             margin-left: 10px;

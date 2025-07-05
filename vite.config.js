@@ -22,8 +22,8 @@ export default defineConfig({
                     @use "@/styles/mixins" as *;
                     @use "@/styles/darkTheme" as *;
                 `,
-            }
-        }
+            },
+        },
     },
     resolve: {
         alias: {

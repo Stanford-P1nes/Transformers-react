@@ -14,6 +14,5 @@ declare global{
 	const SectionAboutCard: typeof import('./src/components/Sections/AboutCard/index')['default']
 	const SectionContacts: typeof import('./src/components/Sections/Contacts/index')['default']
 	const UiMenu: typeof import('./src/components/Ui/Menu/index')['default']
-	const UiQuickStart: typeof import('./src/components/Ui/QuickStart/index')['default']
 	const UiSearch: typeof import('./src/components/Ui/Search/index')['default']
 }

@@ -1,49 +1,41 @@
-.section_about {
+.about-section {
     padding: 20px 0;
 
-    .about_inner {
+    &__inner {
         display: flex;
-        flex-wrap: wrap; // Для адаптивности
+        flex-wrap: wrap;
         gap: 20px;
-        max-width: 900px;
         margin: 0 auto;
         padding: 20px;
-        background: rgba($primary-light, .1);
+        background: rgba($primary-light, 0.1);
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        min-height: 100vh;
+        min-height: 100dvh;
+        animation: startAbout 1s ease;
     }
 
-    .about_author {
+    &__left {
         flex: 1 1 60%;
         padding: 15px;
-        border-left: 4px solid $accent; // Линия как акцент
-        background-color: $accent-for-text;
+        border-left: 4px solid $accent;
         border-radius: 8px;
-
-        &__top_line {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-
-            b {
-                font-size: 0.75rem;
-                font-weight: bold;
-            }
-        }
-
-        &__bottom_line {
-            .about_autor__text {
-                font-size: 0.875rem;
-                line-height: 1.6;
-                text-align: justify;
-            }
-        }
 
     }
 
-    .about_saide {
-        flex: 1 1 30%;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        @include text;
+        font-weight: bold;
+    }
+
+    &__text {
+        @include text;
+        text-align: justify;
+    }
+
+    &__right {
         font-size: 0.875rem;
         display: flex;
         align-items: center;
@@ -52,30 +44,27 @@
         background-color: $unactive;
         border-radius: 8px;
     }
-}
 
-@media (max-width: 768px) {
-    .about_inner {
-        flex-direction: column;
-    }
-
-    .about_author, .about_saide {
-        flex: 1 1 100%;
-        width: 100%;
-    }
-}
-
-.about_inner {
-    animation: startAbout 1s ease;
-
-    @keyframes startAbout {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
+    @media (max-width: 768px) {
+        &__inner {
+            flex-direction: column;
         }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+    
+        &__left,
+        &__right {
+            flex: 1 1 100%;
+            width: 100%;
         }
+    }
+}
+   
+@keyframes startAbout {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

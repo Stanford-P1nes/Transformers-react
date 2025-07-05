@@ -24,7 +24,9 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        transition: transform 0.5s ease, opacity 0.5s ease;
+        transition:
+            transform 0.5s ease,
+            opacity 0.5s ease;
         animation-name: openItem;
         animation-timing-function: ease;
         animation-duration: 0.5s;
@@ -45,7 +47,7 @@
         margin-bottom: 10px;
         border-radius: $border-radius-lg;
         border: 2px solid $primary-light;
-        
+
         img {
             object-fit: cover;
             width: 100%;
@@ -79,10 +81,10 @@
         font-size: 12px;
         margin: 16px 0;
     }
-    
+
     &__grid-item {
         background-color: $primary-light;
-        color: $autobot;
+        color: var(--light-or-dark-side);
         border-radius: $border-radius-sm;
         padding: 4px 6px;
         color: $primary-dark;

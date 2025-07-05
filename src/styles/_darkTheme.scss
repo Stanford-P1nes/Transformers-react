@@ -1,7 +1,8 @@
-@use './variables' as *;
-@use './mixins' as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
 body.dark-theme {
+    --light-or-dark-side: red;
     background-color: $primary-dark;
     > * {
         color: $primary-light;
